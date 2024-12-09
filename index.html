@@ -13,104 +13,93 @@
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img id="logo" class="img-fluid" src="assets/img/netflix_logo.png"
-                        alt="logo"></a>
+        <nav class="navbar navbar-expand-lg ">
+            <div id="nav1" class="container-fluid">
+                <a class="navbar-brand m-4 p-2" href="#"> <img id="logo" class="img-fluid"
+                        src="assets/img/netflix_logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item p-2 m-4 ">
                             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-2 m-4">
                             <a class="nav-link text-white" href="#">Tv Shows</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-2 m-4">
                             <a class="nav-link text-white " href="#">Movies </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-2 m-4">
                             <a class="nav-link text-white" aria-current="page">Recently Added</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-2 m-4">
                             <a class="nav-link text-white" aria-current="page">My List</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Kids" aria-label="Search">
+                        <input class="form-control 
+                        me-2 img-fluid p-2 m-4" type="search" placeholder="Kids" aria-label="Search">
                         <button class="btn" type="submit"><img src="assets/img/search.svg" alt="search"></button>
                     </form>
                     <div class="d-flex dropdown">
                         <button class="btn rounded-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"><img class="avatar" src="assets/img/avatar.png"
+                            aria-expanded="false"><img class="avatar img-fluid m-4" src="assets/img/avatar.png"
                                 alt="avatar" /></button>
                         <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons"
+                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons img-fluid"
                                         src="assets/img/user.svg" alt="user">Profile</a></li>
-                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons"
+                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons img-fluid"
                                         src="assets/img/star (1).svg " />Subscription</a></li>
-                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons"
+                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons img-fluid"
                                         src="assets/img/settings.svg">Setting</a></li>
 
-                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons"
+                            <li><a class="dropdown-item align-baseline text-white" href="#"><img class="icons img-fluid"
                                         src="assets/img/log-out.svg">Sign Out</a></li>
                         </ul>
-
-                        <img class="icons align-self-center" src="assets/img/bell (white).svg" alt="notifiche" />
+                        <img class="icons align-self-center img-fluid m-4" src="assets/img/bell (white).svg"
+                            alt="notifiche" />
                     </div>
                 </div>
+            </div>
         </nav>
-        <nav class=" d-inline-flex flex-row justify-content-start p-2 " class="bg-dark  ">
-            <span class="text-white h1 m-1 align-baseline">Tv Shows</span>
-            <select id="select" class="form-select d-flex bg-dark text-white text-center p-1  m-3"
-                aria-label="Default select example">
-                <option selected class="text-white">Genres</option>
-                <option value="1">Commedia</option>
-                <option value="2">Avventura</option>
-                <option value="3">Horror</option>
-            </select>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0 m-0 ">
+            <div class="container-fluid ">
+                <h1 class="navbar-text text-white p-3 w-25">TV Shows</h1>
+                <div class="dropdown container-fluid">
+                    <button class="btn btn-secondary dropdown-toggle m-0 bg-dark" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Genres
+                    </button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Horror</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Comedy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="p-3 " src="assets/img/menu.png" alt="menu">
         </nav>
     </header>
+    <div class="rox">
+        <div id="carouselExampleInterval" class="carousel slide  " data-bs-ride="carousel">
+            <div class="carousel-inner  ">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/img/media0.webp" class="d-block w-25 " alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/media1.jpg" class="d-block w-25" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/media10.jpg" class="d-block w-25" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="container">
-        <div class="row">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner position-absolute  d-flex flex-column align-content-center ">
-                    <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="assets/img/media0.webp" class="d-block w-25 position-relative" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="assets/img/media1.jpg" class="d-block w-25  position-relative" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="assets/img/media10.jpg" class="d-block w-25 position-relative" alt="...">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row ">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner position-absolute  d-flex flex-column align-content-center">
-                    <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="assets/img/media12.jpg" class="d-block w-25 position-relative" alt="...">
-                        
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="assets/img/media13.jpg" class="d-block w-25  position-relative" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="6000">
-                        <img src="assets/img/media14.webp" class="d-block w-25  position-relative" alt="...">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
